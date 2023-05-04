@@ -115,9 +115,10 @@ conf t
 1. Выполните поиск с PC-A на его шлюз по умолчанию.
 2. Пинг с ПК-A на ПК-B
 3. Пинг с PC-A на S2
+
 ![](https://github.com/Certus25/otus_network_engineer/blob/b054bd011ef85cdc7c3196590532760aa9edce4c/VPC-A.PNG) 
 
-Выполните следующий тест с PC-B.
+Выполните следующий тест с PC-B:
 
 Из командной строки на ПК-B отправьте команду tracert на адрес ПК-A.
 ![](https://github.com/Certus25/otus_network_engineer/blob/b054bd011ef85cdc7c3196590532760aa9edce4c/VPC-B.PNG)
