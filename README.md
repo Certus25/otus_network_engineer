@@ -53,8 +53,7 @@ conf t
  ```
 - настройка транковых портов e0/0 и e0/1:
 ``` 
-int fa0/0
- des TO_S2
+int e0/0
  switchport mode trunk
  switchport trunk native vlan 8
  switchport trunk allowed vlan 3,4
