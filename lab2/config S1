@@ -1,0 +1,30 @@
+conf t
+ #hostname S1
+ #no ip domain lookup
+ #enable secret cisco
+ #line console 0
+ #password cisco
+ #login
+ #logging synchronous 
+ #line vty 0 15
+ #password cisco
+ #login
+ #logging synchronous 
+ #exit
+ service password-encryption 
+ banner motd # Unauthorized access is prohibited!
+ #
+ end
+  conf t
+ int vlan 1
+ ip address 192.168.1.1 255.255.255.0
+ no shut
+  conf t
+ int range e0/0-3
+ switchport trunk  encapsulation dot1q
+ switchport mode trunk
+ int e0/1
+ shut
+ int e0/3
+ shut
+ copy run start
