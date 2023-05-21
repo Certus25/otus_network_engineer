@@ -1,15 +1,18 @@
 # Лабораторная работа. Развертывание коммутируемой сети с резервными каналами
 # Задание:
-Часть 1. Создание сети и настройка основных параметров устройства
-Часть 2. Выбор корневого моста
-Часть 3. Наблюдение за процессом выбора протоколом STP порта, исходя из стоимости портов
-Часть 4. Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов
+ Часть 1. Создание сети и настройка основных параметров устройства
+
+ Часть 2. Выбор корневого моста
+
+ Часть 3. Наблюдение за процессом выбора протоколом STP порта, исходя из стоимости портов
+
+ Часть 4. Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов
 
 
  # Решение:
  
  # Схема лабораторного стенда:
- ![](https://github.com/Certus25/otus_network_engineer/blob/c29f069819e77a5c7fdacbb5cf60577f1f39fa31/lab1-top.PNG)
+ ![](https://github.com/Certus25/otus_network_engineer/blob/11e33e371afc65a65f7784a17a9fb60e750a14ca/shema.png)
 
  # Таблица адресации:
 | Устройство | Интерфейс  |   IP адрес   | Маска подсети |
@@ -40,7 +43,7 @@ conf t
  #
  end
  ```
-Конфигурации находятся по ссылкам: [S1](https://github.com/dmitriyklimenkov/LAB2-STP/blob/main/config%20S1), [S2](https://github.com/dmitriyklimenkov/LAB2-STP/blob/main/config%20S2), [S3](https://github.com/dmitriyklimenkov/LAB2-STP/blob/main/config%20S3).
+Конфигурации находятся по ссылкам: [S1](https://github.com/Certus25/otus_network_engineer/blob/11e33e371afc65a65f7784a17a9fb60e750a14ca/lab2/config%20S1), [S2](https://github.com/Certus25/otus_network_engineer/blob/11e33e371afc65a65f7784a17a9fb60e750a14ca/lab2/config%20S2), [S3](https://github.com/Certus25/otus_network_engineer/blob/11e33e371afc65a65f7784a17a9fb60e750a14ca/lab2/config%20S3).
 
 # 2. Определение корневого моста и состояния портов.
 На всех трех коммутаторах введем команду show spanning-tree, чтобы определить корневой мост. Из предоставленных данных видно, что корневым мостом является коммутатор S1.

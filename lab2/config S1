@@ -6,7 +6,7 @@ conf t
  #password cisco
  #login
  #logging synchronous 
- #line vty 0 15
+ #line vty 0 4
  #password cisco
  #login
  #logging synchronous 

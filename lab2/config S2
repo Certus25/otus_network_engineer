@@ -7,13 +7,14 @@ conf t
  login
  logging synchronous 
  exit
- line vty 0 15
+ line vty 0 4
  password cisco
  login
  logging synchronous 
  exit
  service password-encryption 
- banner motd $ This is a secure system. Authorized access only. $
+ banner motd # Unauthorized access is prohibited!
+ #
  end
 conf t
  int vlan 1
