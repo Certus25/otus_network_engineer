@@ -10,12 +10,12 @@ conf t
  password cisco
  login
  logging synchronous 
- exit
+ 
  service password-encryption 
  banner motd # Unauthorized access is prohibited!
  #
- end
-  conf t
+ 
+ conf t
  int vlan 1
  ip address 192.168.1.1 255.255.255.0
  no shut
