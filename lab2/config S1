@@ -1,16 +1,16 @@
 conf t
- #hostname S1
- #no ip domain lookup
- #enable secret cisco
- #line console 0
- #password cisco
- #login
- #logging synchronous 
- #line vty 0 4
- #password cisco
- #login
- #logging synchronous 
- #exit
+ hostname S1
+ no ip domain lookup
+ enable secret cisco
+ line console 0
+ password cisco
+ login
+ logging synchronous 
+ line vty 0 4
+ password cisco
+ login
+ logging synchronous 
+ exit
  service password-encryption 
  banner motd # Unauthorized access is prohibited!
  #
