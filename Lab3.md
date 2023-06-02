@@ -568,3 +568,4 @@ DHCPNAK              0
 ```
 Конфигурации лабораторной:
 ![](https://github.com/Certus25/otus_network_engineer/blob/81eb1834bf5a5003ac350d2706d53c2b5e641a1c/_Exports_unetlab_export-20230601-001947.zip)
+
