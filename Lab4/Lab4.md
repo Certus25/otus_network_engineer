@@ -20,6 +20,9 @@
 
 # Решение:
  Разработка и задокументируете адресное пространство для лабораторного стенда.
+ 
+  Cхема:
+  ![https://github.com/Certus25/otus_network_engineer/blob/a66f251d0eb7867c5fe27b7d3c4fb754c8a2eee4/Lab4/Topology.PNG]
 
  КАК 1001 Москва
 
