@@ -258,7 +258,7 @@
         e0/0: 55.168.0.241 /30
 
 # Чокурдах
-- [R28](https://vscode.dev/github/Certus25/otus_network_engineer/blob/main/Lab4/R28):
+- [R28](https://github.com/Certus25/otus_network_engineer/blob/6aecd8a531bf69a0333b4282d2ebb57e44d4365b/Lab4/R28):
 
         Loopback:
         e0/0: 55.168.0.233 /30
