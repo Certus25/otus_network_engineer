@@ -1,0 +1,26 @@
+# Настроим маршрутизатор R28:
+```
+    R28(config)ip dhcp excluded-address 10.0.31.250 10.0.31.254
+    R28(config)ip dhcp pool LAN-POOL-VLAN31
+    R28(dhcp-config)network 10.0.31.0 255.255.255.0
+    R28(dhcp-config)default-router 10.0.31.254
+    R28(config)ip dhcp excluded-address 10.0.30.250 10.0.30.254
+    R28(config)ip dhcp pool LAN-POOL-VLAN30
+    R28(dhcp-config)network 10.0.30.0 255.255.255.0
+    R28(dhcp-config)default-router 10.0.30.254
+    interface Loopback0
+    ip address 10.0.254.244 255.255.255.0
+    !
+    interface Ethernet0/0
+    ip address 55.168.0.233 255.255.255.252
+    !
+    interface Ethernet0/1
+    ip address 55.168.0.237 255.255.255.252
+    !
+    interface Ethernet0/2.30
+    encapsulation dot1Q 30
+    ip address 10.0.30.254 255.255.255.0
+    !
+    interface Ethernet0/2.31
+    encapsulation dot1Q 31
+    ip address 10.0.31.254 255.255.255.0
