@@ -107,6 +107,9 @@ conf t
  des Operations
  encapsulation dot1q 4
  ip address 192.168.4.1 255.255.255.0
+ int e0/0.8
+ des Native
+ encapsulation dot1q 8
  ```
 Файл конфигурации [здесь]().
 
