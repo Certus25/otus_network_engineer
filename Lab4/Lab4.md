@@ -225,7 +225,7 @@
         e0/1: 55.168.0.237 /30
         e0/2: 10.0.30.254 /30
 
-    -Sw29![](https://github.com/Certus25/otus_network_engineer/blob/6aecd8a531bf69a0333b4282d2ebb57e44d4365b/Lab4/SW29.md):
+    -[Sw29](https://github.com/Certus25/otus_network_engineer/blob/6aecd8a531bf69a0333b4282d2ebb57e44d4365b/Lab4/SW29.md):
         Loopback: 10.0.254.247 /25
         Vlan40: 10.0.30.253 /30    
 
