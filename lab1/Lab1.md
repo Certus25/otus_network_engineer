@@ -67,10 +67,10 @@ int e0/0
  switchport mode access
  switchport access vlan 3
  ```
-Файл конфигурации [здесь]().
+Файл конфигурации [здесь](https://github.com/Certus25/otus_network_engineer/blob/c286d5d31f1bda90d4bda93e99bf17625f3624d7/lab1/S1.md).
  
 # 2. Конфигурация S2.
-Сделаем основные настройки коммутатора S2, затем настроим порт e0/0 как транковый и e0/1 как порт доступа. Файл конфигурации [здесь]().
+Сделаем основные настройки коммутатора S2, затем настроим порт e0/0 как транковый и e0/1 как порт доступа. Файл конфигурации [здесь](https://github.com/Certus25/otus_network_engineer/blob/c286d5d31f1bda90d4bda93e99bf17625f3624d7/lab1/S2.md).
 
 # 3. Конфигурация R1.
 - основные настройки маршрутизатора R1:
@@ -111,7 +111,7 @@ conf t
  des Native
  encapsulation dot1q 8
  ```
-Файл конфигурации [здесь]().
+Файл конфигурации [здесь](https://github.com/Certus25/otus_network_engineer/blob/c286d5d31f1bda90d4bda93e99bf17625f3624d7/lab1/R1.md).
 
 # 4. Проверка связности.
 1. Выполните поиск с PC-A на его шлюз по умолчанию.
