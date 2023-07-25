@@ -24,7 +24,7 @@
   Cхема:
   ![](https://github.com/Certus25/otus_network_engineer/blob/a66f251d0eb7867c5fe27b7d3c4fb754c8a2eee4/Lab4/Topology.PNG)
 
- КАК 1001 Москва
+ # КАК 1001 Москва
 
     Используем адреса сети 10.0.0.0/16.
     Далее представленно использование ip адресов:
@@ -157,6 +157,12 @@
     - SW9:
         VLAN10: 192.168.10.253/24
         VLAN30: 192.168.254.249/25
+        ```
+             interface range e0/0-1
+             Port-channel1
+             switchport
+             switchport trunk allowed vlan 10,20,30
+        ```
 
     - VPC14: 
         ip-address: 192.168.10.1-249/24
