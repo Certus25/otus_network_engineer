@@ -1,5 +1,5 @@
 # Настройка коммутатора SW29 Чокурдах.
-    ```
+    
     SW29(config-if)#int e0/0
     SW29(config-if)#switchport mode access
     SW29(config-if)#switchport access vlan 30
@@ -13,4 +13,4 @@
     SW29(config-if)#switchport mode access
     SW29(config-if)#switchport trunk encapsulation dot1q
     SW29(config-if)#switchport mode trunk
-    ```    
+        
