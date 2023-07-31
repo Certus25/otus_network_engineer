@@ -64,7 +64,7 @@ int e0/0
  ```
 - настройка порта доступа e0/2:
 ```int e0/2
- switchport mode access
+ switchport mode access 
  switchport access vlan 3
  ```
 Файл конфигурации [здесь](https://github.com/Certus25/otus_network_engineer/blob/c286d5d31f1bda90d4bda93e99bf17625f3624d7/lab1/S1.md).
