@@ -127,7 +127,19 @@
     !
     access-list 130 permit ip 10.0.30.0 0.0.0.255 any
     access-list 131 permit ip 10.0.31.0 0.0.0.255 any
-```
+
+    track 1 ip sla 130 reachability
+    !
+    track 2 ip sla 131 reachability
+
+    ip route 0.0.0.0 0.0.0.0 55.168.0.234 track 1
+    ip route 0.0.0.0 0.0.0.0 55.168.0.238 track 2
+    ip route 0.0.0.0 0.0.0.0 10.0.100.253
+    ip route 0.0.0.0 0.0.0.0 55.168.0.238 10
+    ip route 0.0.0.0 0.0.0.0 55.168.0.234 10
+
+
+    ```
 
 # 3.Настроите отслеживание линка через технологию IP SLA.(только для IPv4)
 
