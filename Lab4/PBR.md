@@ -186,7 +186,8 @@
     Number of successes: 4
     Number of failures: 0
     Operation time to live: Forever
-    ```
+    
+```
 
 ![](https://github.com/Certus25/otus_network_engineer/blob/0099a457852f46ab7a2ede44a9bd3080ca8283f1/Lab4/PBR30.PNG)
 ![](https://github.com/Certus25/otus_network_engineer/blob/0099a457852f46ab7a2ede44a9bd3080ca8283f1/Lab4/PBR31.PNG)
