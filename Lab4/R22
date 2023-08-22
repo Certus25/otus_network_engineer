@@ -1,0 +1,17 @@
+- Конфигурация
+```
+    interface Loopback0
+    ip address 54.168.254.254 255.255.255.255
+    !
+    interface Ethernet0/0
+    description R22-KAK-101-e0/0->R14-KAK-1001-e0/2
+    ip address 54.168.0.254 255.255.255.252
+    !
+    interface Ethernet0/1
+    description R22-KAK-101-e0/1->R21-KAK-301-e0/1
+    ip address 54.168.0.250 255.255.255.252
+    !
+    interface Ethernet0/2
+    description R22-KAK-101-e0/2->R23-KAK-520-e0/0
+    ip address 55.168.0.253 255.255.255.252
+```

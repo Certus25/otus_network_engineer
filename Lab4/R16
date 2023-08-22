@@ -1,0 +1,75 @@
+# Настройка маршунизатора R16-KAK-2042
+```
+    Router>en
+    Router#conf t
+    Enter configuration commands, one per line.  End with CNTL/Z.
+    Router(config)#hostname R16-KAK-2042
+    R16-KAK-2042(config)#int l0
+    R16-KAK-2042(config-if)#ip address 192.168.254.248 255.255.255.255
+    R16-KAK-2042(config-if)#no sh
+    R16-KAK-2042(config)#int e0/0
+    R16-KAK-2042(config-if)#des R16-KAK-2042-e0/0->SW10-KAK-2042-e0/3
+    R16-KAK-2042(config-if)#ip address 192.168.20.254 255.255.255.0
+    R16-KAK-2042(config-if)#no sh
+    R16-KAK-2042(config-if)#int e0/1
+    R16-KAK-2042(config-if)#des R16-KAK-2042-e0/1->R18-KAK-2042-e0/0
+    R16-KAK-2042(config-if)#ip address 192.168.0.249 255.255.255.252
+    R16-KAK-2042(config-if)#no sh
+    16-KAK-2042(config-if)#int e0/2
+    R16-KAK-2042(config-if)#des R16-KAK-2042-e0/2->SW9-KAK-2042-e1/0
+    R16-KAK-2042(config-if)#ip address 192.168.10.253 255.255.255.0
+    R16-KAK-2042(config-if)#no sh
+    R16-KAK-2042(config-if)#int e0/3
+    R16-KAK-2042(config-if)#des R16-KAK-2042-e0/3->R32-KAK-2042-e0/0
+    R16-KAK-2042(config-if)#ip address 192.168.0.246 255.255.255.252
+    R16-KAK-2042(config-if)#no sh
+```
+
+- Конфигурация
+    ```
+    ip dhcp excluded-address 192.168.20.192 192.168.20.254
+    ip dhcp excluded-address 192.168.10.1 192.168.10.191
+    ip dhcp excluded-address 192.168.10.249 192.168.10.254
+    !
+    ip dhcp pool LAN-VPC-20
+    network 192.168.20.0 255.255.255.0
+    default-router 192.168.20.254
+    dns-server 192.168.20.254
+    !
+    ip dhcp pool LAN-VPC-10
+    network 192.168.10.0 255.255.255.0
+    default-router 192.168.10.253
+    
+    interface Loopback0
+    ip address 192.168.254.248 255.255.255.255
+    !
+    interface Ethernet0/0
+    description R16-KAK-2042-e0/0->SW10-KAK-2042-e0/3
+    no ip address
+    !
+    interface Ethernet0/0.20
+    encapsulation dot1Q 20
+    ip address 192.168.20.254 255.255.255.0
+    !
+    interface Ethernet0/0.30
+    encapsulation dot1Q 30
+    !
+    interface Ethernet0/1
+    description R16-KAK-2042-e0/1->R18-KAK-2042-e0/0
+    ip address 192.168.0.249 255.255.255.252
+    !
+    interface Ethernet0/2
+    description R16-KAK-2042-e0/2->SW9-KAK-2042-e1/0
+    no ip address
+    !
+    interface Ethernet0/2.10
+    description duble LAN-VPC-10
+    encapsulation dot1Q 10
+    ip address 192.168.10.253 255.255.255.0
+    !
+    interface Ethernet0/3
+    description R16-KAK-2042-e0/3->R32-KAK-2042-e0/0
+    ip address 192.168.0.246 255.255.255.252
+    !
+
+    ```

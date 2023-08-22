@@ -1,0 +1,28 @@
+-Настройка коммутатора SW9-KAK2042
+```
+    Switch>en
+    Switch#host
+    Switch#conf t
+    Enter configuration commands, one per line.  End with CNTL/Z.
+    Switch(config)#hostname SW9-KAK-2042
+    SW9-KAK-2042(config)#int l0
+    SW9-KAK-2042(config-if)#
+    *Aug  7 20:42:59.567: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+    SW9-KAK-2042(config-if)#ip address 192.168.254.242 255.255.255.255
+    SW9-KAK-2042(config-if)#no sh
+    SW9-KAK-2042(config-vlan)#vlan 30
+    SW9-KAK-2042(config-vlan)#name MGMT
+    SW9-KAK-2042(config-vlan)#vlan 10
+    SW9-KAK-2042(config-vlan)#name Clients-VPC-10
+    SW9-KAK-2042(config-vlan)#vlan 20
+    SW9-KAK-2042(config-vlan)#name Clients-VPC-20
+    SW9-KAK-2042(config)#int e0/2
+    SW9-KAK-2042(config-if)#switchport mode access
+    SW9-KAK-2042(config-if)#switchport access vlan 10
+    SW9-KAK-2042(config-if)#no sh
+    SW9-KAK-2042(config-if)#int range e0/0-1
+    SW9-KAK-2042(config-if-range)#sh
+    SW9-KAK-2042(config-if-range)#channel-group 1 mode active
+
+    
+    
