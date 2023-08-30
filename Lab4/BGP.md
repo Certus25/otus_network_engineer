@@ -1,9 +1,9 @@
 # Домашняя работа: eBGP и iBGP.
 
-### - [Настройка eBGP]()
+### - [Настройка eBGP](https://github.com/Certus25/otus_network_engineer/blob/ee2db9678e19ce5b3cbd2951f81b6b18e114ed68/Lab4/eBGP.md)
 
-### - [Настройка iBGP]()
-### - [Настройка фильтрации]()
+### - [Настройка iBGP](https://github.com/Certus25/otus_network_engineer/blob/ee2db9678e19ce5b3cbd2951f81b6b18e114ed68/Lab4/iBGP.md)
+### - [Настройка фильтрации](https://github.com/Certus25/otus_network_engineer/blob/ee2db9678e19ce5b3cbd2951f81b6b18e114ed68/Lab4/filtering%20settings.md)
 
 # Задание eBGP:
 
