@@ -284,3 +284,11 @@ RPKI validation codes: V valid, I invalid, N Not found
  *>  18.18.18.18/32   53.168.0.254                           0 301 520 2042 i
 
 ```
+```
+R15-KAK-1001#ping 18.18.18.18 source l0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 18.18.18.18, timeout is 2 seconds:
+Packet sent with a source address of 15.15.15.15
+!!!!!
+
+```
